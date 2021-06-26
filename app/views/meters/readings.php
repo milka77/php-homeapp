@@ -75,7 +75,7 @@
 
     <div class="row">
       <div class="col text-center">
-        <a href="#" class="btn btn-outline-dark">Add new reading</a>
+        <a href="<?php echo URLROOT; ?>/meters/add" class="btn btn-outline-dark">Add new reading</a>
       </div>
     </div>
 <?php require APPROOT . '/views/inc/footer.php'; ?>
