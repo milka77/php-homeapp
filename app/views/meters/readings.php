@@ -29,7 +29,7 @@
                     echo $elec->difference; 
                   } ?>
                 </td>
-                <td class="text-center"><a href="readings-update.php?id=<?php echo $electricity['id']?>&meter-type=<?php echo 'elect' ?>" class="edit-link"><i class="fas fa-edit"></i></a></td>
+                <td class="text-center"><a href="<?php echo URLROOT; ?>/meters/show/<?php echo $elec->id; ?>" class="edit-link"><i class="fas fa-edit"></i></a></td>
               </tr>
             <?php } ?>
 
@@ -63,7 +63,7 @@
                     echo $gas->difference; 
                   } ?>
                 </td>
-                <td class="text-center"><a href="readings-update.php?id=<?php echo $electricity['id']?>&meter-type=<?php echo 'elect' ?>" class="edit-link"><i class="fas fa-edit"></i></a></td>
+                <td class="text-center"><a href="<?php echo URLROOT; ?>/meters/edit/<?php echo $gas->id; ?>" class="edit-link"><i class="fas fa-edit"></i></a></td>
               </tr>
             <?php } ?>
 
