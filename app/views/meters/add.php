@@ -20,7 +20,7 @@
     </div>
     <div class="mt-2">
       <label for="ingredients">Date of Reading: <span class="text-danger">*</span></label>
-      <input class="form-control <?php echo (!empty($data['date_err'])) ? 'is-invalid' : ''; ?>" value="<?php if(isset($data['date'])){ echo $data['date'];} ?>" type="date" name="date">
+      <input class="form-control <?php echo (!empty($data['date_err'])) ? 'is-invalid' : ''; ?>" value="<?php if(isset($data['date'])){ echo $data['date'];}else{'';} ?>" type="date" name="date" required>
       <span class="invalid-feedback"><?php echo $data['date_err']; ?></span>
 
     </div>

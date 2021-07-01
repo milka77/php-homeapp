@@ -61,7 +61,7 @@
     }
 
 
-    public function getElecReadingById($id) {
+    public function getReadingById($id) {
       // Query
       $this->db->query('SELECT * FROM readings WHERE id = :id');
 
@@ -72,5 +72,24 @@
       $row = $this->db->single();
 
       return $row;
+    }
+
+    public function updateReading($data) {
+      // Query
+      $this->db->query('UPDATE readings SET reading = :reading, date = :date, difference = :difference WHERE id = :id');
+
+      // Bind values
+      $this->db->bind(':id', $data['id']);
+      $this->db->bind(':reading', $data['reading']);
+      $this->db->bind(':date', $data['date']);
+      $this->db->bind(':difference', $data['difference']);
+
+
+      // Execute
+      if($this->db->execute()) {
+        return true;
+      } else {
+        return false;
+      }
     }
   }

@@ -9,6 +9,7 @@
     <table class="table">
       <thead>
         <th>Reading Date</th>
+        <th>Meter Type</th>
         <th>Reading Value</th>
         <th>Difference</th>
         <th>Edit</th>
@@ -16,6 +17,7 @@
       <tbody>
         <tr>
           <td><?php echo $data['reading']->date; ?></td>
+          <td class="text-center"><?php echo ucfirst($data['reading']->meter_type); ?></td>
           <td class="text-center"><?php echo $data['reading']->reading; ?></td>
           <td class="text-center"><?php if($data['reading']->difference == 0){
               echo "N/A";
@@ -30,8 +32,10 @@
       </tbody>
     </table>
   </div>
-</div>
-<?php print_r($data); ?>
 
+  <div class="text-center">
+    <a class="btn btn-outline-dark" href="<?php echo URLROOT; ?>/meters/index">Back</a>
+  </div>
+</div>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

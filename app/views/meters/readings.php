@@ -15,7 +15,7 @@
             <th>Reading Date</th>
             <th>Reading Value</th>
             <th>Difference</th>
-            <th>Edit</th>
+            <th>Details</th>
           </thead>
           <tbody>
             
@@ -29,7 +29,7 @@
                     echo $elec->difference; 
                   } ?>
                 </td>
-                <td class="text-center"><a href="<?php echo URLROOT; ?>/meters/show/<?php echo $elec->id; ?>" class="edit-link"><i class="fas fa-edit"></i></a></td>
+                <td class="text-center"><a href="<?php echo URLROOT; ?>/meters/show/<?php echo $elec->id; ?>" class="edit-link"><i class="fas fa-arrow-right"></i></a></td>
               </tr>
             <?php } ?>
 
@@ -49,7 +49,7 @@
             <th>Reading Date</th>
             <th>Reading Value</th>
             <th>Difference</th>
-            <th>Edit</th>
+            <th>Details</th>
           </thead>
           <tbody>
             
@@ -63,7 +63,7 @@
                     echo $gas->difference; 
                   } ?>
                 </td>
-                <td class="text-center"><a href="<?php echo URLROOT; ?>/meters/edit/<?php echo $gas->id; ?>" class="edit-link"><i class="fas fa-edit"></i></a></td>
+                <td class="text-center"><a href="<?php echo URLROOT; ?>/meters/show/<?php echo $gas->id; ?>" class="edit-link"><i class="fas fa-arrow-right"></i></a></td>
               </tr>
             <?php } ?>
 
