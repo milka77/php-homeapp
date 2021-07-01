@@ -33,8 +33,19 @@
     </table>
   </div>
 
-  <div class="text-center">
-    <a class="btn btn-outline-dark" href="<?php echo URLROOT; ?>/meters/index">Back</a>
+
+  <div class="row">
+    <div class="col-6 text-center">
+      <a class="btn btn-outline-dark" href="<?php echo URLROOT; ?>/meters/index">Back</a>
+    </div>
+    
+    <div class="col-6 text-center">
+      <form action="<?php echo URLROOT; ?>/meters/delete/<?php echo $data['reading']->id; ?>" method="POST">
+        <input class="btn btn-outline-danger" type="submit" value="Delete">
+      </form>
+      
+    
+    </div>
   </div>
 </div>
 

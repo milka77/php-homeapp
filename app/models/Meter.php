@@ -92,4 +92,20 @@
         return false;
       }
     }
+
+    // Delete function
+    public function deleteReading($id) {
+      // Query
+      $this->db->query('DELETE FROM readings WHERE id = :id');
+
+      // Bind value
+      $this->db->bind(':id', $id);
+
+      // Execute
+      if($this->db->execute()) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }

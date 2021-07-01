@@ -81,7 +81,7 @@
         if(empty($data['reading_err'])) {
           // Validated
           if($this->meterModel->addReading($data)) {
-            flash('reading_message', 'Reading added successfuly');
+            flash('readings_message', 'Reading added successfuly');
             redirect('meters/add');
 
           } else {
@@ -147,7 +147,7 @@
         if(empty($data['reading_err']) && empty($data['date_err'])) {
           // Validated
           if($this->meterModel->updateReading($data)) {
-            flash('reading_message', 'Reading updated successfuly');
+            flash('readings_message', 'Reading updated successfuly');
             redirect('meters/index');
 
           } else {
@@ -168,6 +168,23 @@
         ];
 
         $this->view('meters/update', $data);
+      }
+    }
+
+    // Delete function 
+    public function delete($id) {
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        // Get the readings from model
+        $reading = $this->meterModel->getReadingById($id);
+
+        if($this->meterModel->deleteReading($id)) {
+          flash('readings_message', 'Readings removed successfully');
+          redirect('meters');
+        } else {
+          die('Something went wrong');
+        }
+      } else {
+        redirect('meters');
       }
     }
   }
