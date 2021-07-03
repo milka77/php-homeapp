@@ -82,7 +82,7 @@
           // Validated
           if($this->meterModel->addReading($data)) {
             flash('readings_message', 'Reading added successfuly');
-            redirect('meters/add');
+            redirect('meters/readings');
 
           } else {
             die('Something went wrong');

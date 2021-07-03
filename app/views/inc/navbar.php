@@ -16,6 +16,18 @@
         <li class="nav-item">
           <a class="nav-link" href="<?php echo URLROOT; ?>/meters/index">Readings</a>
         </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Vegan</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?php echo URLROOT; ?>/vegans/index">Vegan Recipes</a>
+          <a class="dropdown-item" href="<?php echo URLROOT; ?>/vegans/add">Add New Recipe</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Shopping List</a>
+        </div>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo URLROOT; ?>/meters/index">Shopping List</a>
+        </li>
       </ul>
       
       <!-- Login Menu -->
