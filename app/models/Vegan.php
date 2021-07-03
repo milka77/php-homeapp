@@ -41,4 +41,16 @@
 
       return $results;
     }
+
+    public function getRecipeByID($id) {
+      // Query
+      $this->db->query('SELECT * FROM vegan where id = :id');
+
+      // Bind value
+      $this->db->bind(':id', $id);
+
+      $result = $this->db->single();
+
+      return $result;
+    }
   }

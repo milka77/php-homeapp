@@ -72,4 +72,14 @@
         $this->view('vegans/add', $data);
       }
     }
+
+    public function show($id) {
+      $recipe = $this->veganModel->getRecipeById($id);
+
+      $data = [
+        'recipe' => $recipe
+      ];
+
+      $this->view('vegans/show', $data);
+    }
   }
