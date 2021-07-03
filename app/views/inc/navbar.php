@@ -26,7 +26,7 @@
         </div>
       </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo URLROOT; ?>/meters/index">Shopping List</a>
+          <a class="nav-link" href="#">Fitness</a>
         </li>
       </ul>
       

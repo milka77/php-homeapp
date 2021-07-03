@@ -23,5 +23,5 @@
 <!-- End of Navbar -->
 
 <!-- Main container start -->
-<div class="container">
+<div class="container main-container">
   

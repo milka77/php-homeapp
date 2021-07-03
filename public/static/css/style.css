@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  min-height: calc(100vh - 122px);
+}
+
+footer {
+  background-color: rgb(52, 58, 64);
+  height: 50px;
+  color: #fafafa;
+}
