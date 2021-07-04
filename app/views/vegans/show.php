@@ -18,13 +18,26 @@
         <th>Ingredients</th>
         <th>Details</th>
       </thead>
-
+<?php echo $data['recipe']->ingredients; ?>
       <tbody>
        
           <tr>
             <td><?php echo $data['recipe']->name; ?></td>
-            <td><?php echo $data['recipe']->ingredients; ?></td>
-            <td class="text-center"><i class="fas fa-arrow-right"></i></td>
+            <!-- <td><?php // echo $data['recipe']->ingredients; ?></td> -->
+            <td>
+              <form action="" method="POST">
+              <?php
+                $filtered = str_replace(", ", ",", $data['recipe']->ingredients);
+                $ingredients = preg_split("/[,]+/", $filtered);
+                foreach($ingredients as $ingredient) {
+                  echo '<input class="mr-1" type="checkbox" name="' . $ingredient . '" id="">' . $ingredient . '<br>';
+                }
+              ?>
+                
+                </td>
+                <td class="text-center"><input type="submit" value="submit"></td>
+            
+              </form>
           </tr>
         
       </tbody>
