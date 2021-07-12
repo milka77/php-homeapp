@@ -12,7 +12,7 @@
         <small class="text-muted">Old meter SN: A03M141173</small><br>
         <small>Smart meter SN: 21E5002656</small>
       </div>
-      <table class="table">
+      <table class="table table-striped">
         <thead>
           <th>Reading Date</th>
           <th>Reading Value</th>
@@ -46,7 +46,7 @@
         <small class="text-muted">Old Meter SN: 048481</small><br>
         <small>Smart Meter SN: E6E02553062021</small>
       </div>
-      <table class="table">
+      <table class="table table-striped">
         <thead>
           <th>Reading Date</th>
           <th>Reading Value</th>
