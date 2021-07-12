@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
-<div class="container w-50 ">
+<div class="container w-75 ">
   <div class="col-12">
     <h1 class="text-center">Vegan Food Recipes</h1>
     <hr>
@@ -18,7 +18,7 @@
         <th>Ingredients</th>
         <th>Details</th>
       </thead>
-<?php echo $data['recipe']->ingredients; ?>
+
       <tbody>
        
           <tr>
@@ -34,8 +34,8 @@
                 }
               ?>
                 
-                </td>
-                <td class="text-center"><input type="submit" value="submit"></td>
+            </td>
+            <td class="text-center"><input class="btn btn-outline-dark" type="submit" value="Add item(s)"></td>
             
               </form>
           </tr>
