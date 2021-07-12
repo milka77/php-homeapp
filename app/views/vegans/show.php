@@ -25,12 +25,12 @@
             <td><?php echo $data['recipe']->name; ?></td>
             <!-- <td><?php // echo $data['recipe']->ingredients; ?></td> -->
             <td>
-              <form action="" method="POST">
+              <form action="<?php echo URLROOT;?>/shopping_lists/add" method="POST">
               <?php
                 $filtered = str_replace(", ", ",", $data['recipe']->ingredients);
                 $ingredients = preg_split("/[,]+/", $filtered);
                 foreach($ingredients as $ingredient) {
-                  echo '<input class="mr-1" type="checkbox" name="' . $ingredient . '" id="">' . $ingredient . '<br>';
+                  echo '<input class="mr-1" type="checkbox" name="item_name[]" value="' . $ingredient . '">' . $ingredient . '<br>';
                 }
               ?>
                 

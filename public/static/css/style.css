@@ -18,3 +18,16 @@ footer {
   height: 50px;
   color: #fafafa;
 }
+
+/* ---- Shopping List --- */
+.item-done {
+  text-decoration: line-through;
+}
+
+.green {
+  color: rgb(5, 185, 20);
+}
+
+#shoppingList {
+  margin-left: 39%;
+}

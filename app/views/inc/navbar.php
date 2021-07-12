@@ -22,7 +22,7 @@
           <a class="dropdown-item" href="<?php echo URLROOT; ?>/vegans/index">Vegan Recipes</a>
           <a class="dropdown-item" href="<?php echo URLROOT; ?>/vegans/add">Add New Recipe</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Shopping List</a>
+          <a class="dropdown-item" href="<?php echo URLROOT; ?>/shopping_lists/index">Shopping List</a>
         </div>
       </li>
         <li class="nav-item">

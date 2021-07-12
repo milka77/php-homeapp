@@ -26,7 +26,7 @@
           <tr>
             <td><?php echo $dinner->name; ?></td>
             <td><?php echo $dinner->ingredients; ?></td>
-            <td class="text-center"><i class="fas fa-arrow-right"></i></td>
+            <td class="text-center"><a href="<?php echo URLROOT;?>/vegans/show/<?php echo $dinner->id; ?>"><i class="fas fa-arrow-right"></i></a></td>
           </tr>
         <?php } ?>
       </tbody>
@@ -52,7 +52,7 @@
           <tr>
             <td><?php echo $soup->name; ?></td>
             <td><?php echo $soup->ingredients; ?></td>
-            <td class="text-center"><i class="fas fa-arrow-right"></i></td>
+            <td class="text-center"><a href="<?php echo URLROOT;?>/vegans/show/<?php echo $soup->id; ?>"><i class="fas fa-arrow-right"></i></a></td>
           </tr>
         <?php } ?>
       </tbody>
