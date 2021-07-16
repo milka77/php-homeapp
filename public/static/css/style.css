@@ -31,3 +31,16 @@ footer {
 #shoppingList {
   margin-left: 39%;
 }
+
+/* --- NEWS styles ---*/
+.news {
+  padding: 10px 10px 15px 10px;
+  position: relative;
+  min-height: 9rem;
+}
+
+.small {
+  position: absolute;
+  right: 1rem;
+  bottom: .4rem;
+}
