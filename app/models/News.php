@@ -23,4 +23,14 @@
         return false;
       }
     }
+
+    // Get the News list
+    public function getNews() {
+      //Query
+      $this->db->query('SELECT * FROM news ORDER BY date DESC');
+
+      $results = $this->db->resultSet();
+
+      return $results;
+    }
   }
